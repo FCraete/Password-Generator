@@ -1,0 +1,58 @@
+body {
+  margin-top: 5rem;
+}
+
+#main {
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #092327;
+  border-radius: 10px;
+  padding: 48px;
+  font-family: sans-serif;
+  font-size: 28px;
+  color: #deeef7;
+}
+#bttn {
+  margin-top: 50px;
+  height: 30px;
+  width: 275px;
+  color: #052423;
+  font-weight: 600;
+  background-color: #bdddef;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+#bttn:active {
+  color: yellow;
+  background-color: #092327;
+}
+#input-password {
+  box-sizing: border-box;
+  padding: 7px 0 0 0;
+}
+.p-password {
+  text-align: center;
+  height: 30px;
+  width: 275px;
+  padding: 5px 15px;
+  color: #052423;
+  font-weight: 600;
+  background-color: #bdddef;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  border: none;
+  padding: 0;
+}
+
+.green-text {
+  color: #00a9a5;
+}
+.font-bigger {
+  font-size: 38px;
+}
+.font-smaller {
+  font-size: 22px;
+}
