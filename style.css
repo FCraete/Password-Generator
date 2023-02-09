@@ -24,13 +24,24 @@ body {
   border-radius: 3px;
   font-size: 1rem;
 }
-#bttn:active {
+#bttn:active, #copy-bttn:active {
   color: yellow;
   background-color: #092327;
 }
 #input-password {
   box-sizing: border-box;
   padding: 0.4rem 0 0 0;
+}
+#copy-bttn {
+  height: 2rem;
+  width: 4rem;
+  color: #052423;
+  font-weight: 600;
+  background-color: #bdddef;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+
 }
 .p-password {
   text-align: center;

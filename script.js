@@ -91,20 +91,30 @@ const characters = [
   "?",
   "/",
 ];
-let passwordLength = 15;
-let passwordField = document.getElementById("input-password");
+let passwordLength = 15; // sets the password length
+let passwordGenerator = document.getElementById("bttn"); // gets the generate password button
+let passwordField = document.getElementById("input-password"); // gets the input field where the password will be generated
+let copyButton = document.getElementById("copy-bttn"); // gets the copy to clipboard button
 
 function generateRandomLetter() {
   let arrIndex = Math.floor(Math.random() * characters.length);
   return characters[arrIndex];
 }
 
-function generatePassword() {
+passwordGenerator.addEventListener("click", function () {
   let passwordString = "";
   for (let i = 0; i < passwordLength; i++) {
     passwordString += generateRandomLetter();
   }
   passwordField.innerText = passwordString;
-}
-let button = document.getElementById("bttn");
-button.addEventListener("click", generatePassword);
+});
+
+copyButton.addEventListener("click", function () {
+  var r = document.createRange();
+  r.selectNode(document.getElementById("input-password"));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(r);
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  alert("Copied " + r + " to clipboard");
+});
